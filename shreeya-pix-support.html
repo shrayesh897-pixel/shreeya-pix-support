@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official support page for Shreeya Pix. Get help with photo editing, subscriptions, purchases, privacy, and app issues.">
+  <meta name="theme-color" content="#ffc107">
+  <title>Support · Shreeya Pix</title>
+
+  <style>
+    :root{
+      --bg:#f6f6f3;
+      --card:#ffffff;
+      --text:#1c1c1e;
+      --muted:#64676d;
+      --line:#e6e6df;
+      --accent:#ffc107;
+      --accent2:#ff9800;
+      --ink:#262626;
+      --soft:#fff7dc;
+      --link:#8a5d00;
+      --shadow:0 14px 35px rgba(0,0,0,.07);
+      --radius:20px;
+    }
+
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#171717;
+        --card:#242424;
+        --text:#f4f4f4;
+        --muted:#b7b7b7;
+        --line:#3c3c3c;
+        --soft:#37301c;
+        --link:#ffd45c;
+        --shadow:0 14px 35px rgba(0,0,0,.22);
+      }
+    }
+
+    *{box-sizing:border-box}
+
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    a{color:var(--link)}
+
+    .hero{
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:var(--ink);
+      padding:58px 20px 88px;
+    }
+
+    .container{
+      width:min(100% - 40px, 980px);
+      margin:0 auto;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-size:18px;
+      font-weight:800;
+      letter-spacing:-.2px;
+    }
+
+    .logo{
+      width:42px;
+      height:42px;
+      border-radius:13px;
+      background:var(--ink);
+      position:relative;
+      flex:0 0 auto;
+      box-shadow:0 8px 18px rgba(0,0,0,.16);
+    }
+
+    .logo:before{
+      content:"";
+      position:absolute;
+      left:12px;
+      top:9px;
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:var(--accent);
+    }
+
+    .logo:after{
+      content:"";
+      position:absolute;
+      left:9px;
+      top:22px;
+      width:17px;
+      height:11px;
+      border-radius:9px 9px 3px 3px;
+      background:var(--accent);
+    }
+
+    h1{
+      margin:30px 0 10px;
+      font-size:clamp(34px,6vw,52px);
+      line-height:1.05;
+      letter-spacing:-1.4px;
+    }
+
+    .hero p{
+      margin:0;
+      max-width:680px;
+      font-size:17px;
+      opacity:.88;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      margin-top:20px;
+      padding:7px 13px;
+      border-radius:999px;
+      background:rgba(0,0,0,.12);
+      font-size:14px;
+      font-weight:700;
+    }
+
+    main{
+      margin-top:-48px;
+      padding-bottom:64px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+      margin-bottom:18px;
+    }
+
+    .card,
+    .section{
+      background:var(--card);
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+      border-radius:var(--radius);
+    }
+
+    .card{
+      padding:20px;
+    }
+
+    .icon{
+      width:42px;
+      height:42px;
+      border-radius:13px;
+      display:grid;
+      place-items:center;
+      background:var(--accent);
+      color:var(--ink);
+      font-size:20px;
+      margin-bottom:12px;
+    }
+
+    .card h2{
+      margin:0 0 5px;
+      font-size:17px;
+      letter-spacing:-.2px;
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.55;
+    }
+
+    .section{
+      padding:28px;
+      margin-bottom:16px;
+    }
+
+    .section h2{
+      margin:0 0 10px;
+      font-size:23px;
+      letter-spacing:-.35px;
+    }
+
+    .section p{
+      margin:0 0 12px;
+    }
+
+    .section p:last-child{
+      margin-bottom:0;
+    }
+
+    .contact-box{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:18px;
+      padding:18px;
+      border-radius:16px;
+      background:var(--soft);
+      border:1px solid var(--line);
+      margin-top:16px;
+    }
+
+    .contact-box strong{
+      display:block;
+      margin-bottom:3px;
+    }
+
+    .contact-box small{
+      color:var(--muted);
+    }
+
+    .button{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      padding:0 18px;
+      border-radius:12px;
+      background:var(--ink);
+      color:#fff;
+      text-decoration:none;
+      font-weight:800;
+      white-space:nowrap;
+      transition:transform .15s ease, opacity .15s ease;
+    }
+
+    .button:hover{
+      transform:translateY(-1px);
+      opacity:.92;
+    }
+
+    ul{
+      margin:8px 0 0;
+      padding-left:22px;
+    }
+
+    li{
+      margin:7px 0;
+    }
+
+    .muted{
+      color:var(--muted);
+    }
+
+    footer{
+      text-align:center;
+      color:var(--muted);
+      font-size:14px;
+      padding:0 20px 38px;
+    }
+
+    @media(max-width:760px){
+      .hero{padding-top:44px;padding-bottom:80px}
+      .grid{grid-template-columns:1fr}
+      .section{padding:22px 20px}
+      .contact-box{align-items:flex-start;flex-direction:column}
+      .button{width:100%}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Shreeya Pix</span>
+      </div>
+
+      <h1>Support</h1>
+
+      <p>
+        Need help with Shreeya Pix? Find answers to common questions or contact us directly.
+      </p>
+
+      <div class="badge">Official Shreeya Pix Support</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <div class="card">
+        <div class="icon">✂️</div>
+        <h2>Editing Help</h2>
+        <p>Get help with background removal, resizing, image conversion, saving and sharing.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💳</div>
+        <h2>Premium & Purchases</h2>
+        <p>Questions about Premium, subscriptions, restoring purchases or billing.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔒</div>
+        <h2>Privacy</h2>
+        <p>Your photos are processed on your device and are not uploaded to our servers.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2>Contact Support</h2>
+      <p>
+        If you have a question, found a bug, have a feature suggestion, or need help with the app,
+        please contact us by email.
+      </p>
+
+      <div class="contact-box">
+        <div>
+          <strong>Bhupendra Dahal</strong>
+          <small>Developer · Bhupendra Dahal</small><br>
+          <a href="mailto:bhupendradahal30@gmail.com">bhupendradahal30@gmail.com</a>
+        </div>
+
+        <a class="button" href="mailto:bhupendradahal30@gmail.com?subject=Shreeya%20Pix%20Support">
+          Email Support
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Common Questions</h2>
+      <ul>
+        <li><strong>Are my photos uploaded?</strong> No. Shreeya Pix processes your photos on your device.</li>
+        <li><strong>How do I save an edited image?</strong> Use the save option in the app and allow Photos access when requested.</li>
+        <li><strong>How do I restore Premium?</strong> Open the purchase or Premium screen in the app and choose “Restore Purchases”.</li>
+        <li><strong>How do I manage my subscription?</strong> Manage or cancel it from your Apple ID or Google Play subscription settings.</li>
+        <li><strong>How do I report a problem?</strong> Email us and include your device model, operating system version, and a short description of the issue.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>About Shreeya Pix</h2>
+      <p>
+        Shreeya Pix is a photo editing app designed for background removal, resizing,
+        image conversion and creating clean cutouts directly on your device.
+      </p>
+      <p class="muted">
+        Support information may be updated as the app evolves.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Response & Safety</h2>
+      <p>
+        Please do not send passwords, payment card details, or other sensitive information by email.
+        Purchase payments are handled by the Apple App Store or Google Play.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Bhupendra Dahal. Shreeya Pix. All rights reserved.
+  </footer>
+</body>
+</html>
