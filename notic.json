@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "id": "dashain_2083",
+  "start": "2026-08-10T00:00:00+05:45",
+  "end": "2026-08-30T23:59:59+05:45",
+  "show_once": true,
+  "dismissible": true,
+  "accent_color": "#D32F2F",
+  "image": "https://calendar-event.pages.dev/images/dashain.jpg",
+  "title": {
+    "ne": "विजया दशमीको हार्दिक शुभकामना 🙏",
+    "en": "Happy Vijaya Dashami 🙏",
+    "hi": "विजयादशमी की हार्दिक शुभकामनाएँ 🙏"
+  },
+  "message": {
+    "ne": "यो पावन पर्वले तपाईंको जीवनमा सुख, शान्ति र समृद्धि ल्याओस्।",
+    "en": "May this festival bring happiness, peace and prosperity to your life.",
+    "hi": "यह पावन पर्व आपके जीवन में सुख, शांति और समृद्धि लाए।"
+  },
+  "close_text": { "ne": "बन्द गर्नुहोस्", "en": "Close", "hi": "बंद करें" },
+  "button_text": { "ne": "एप सेयर", "en": "Share App", "hi": "ऐप शेयर" },
+  "button_url": "https://play.google.com/store/apps/details?id=com.shreeyadahal.patrohub"
+}
