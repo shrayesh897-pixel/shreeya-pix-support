@@ -4,14 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Editing Help · Shreeya Pix</title>
-<meta name="description" content="Shreeya Pix editing help: remove backgrounds, erase and restore edges, change backgrounds, crop, resize, convert, merge photos and scan documents.">
-<meta name="theme-color" content="#ffc107">
+<meta name="description" content="Shreeya Pix Editing Help for background removal, object erasing, cropping, photo conversion, custom backgrounds and more. Shreeya Pix is free, with optional Premium to remove ads.">
+
 <style>
-:root{--bg:#f6f6f3;--card:#fff;--text:#1c1c1e;--muted:#5d6065;--line:#e5e5df;--accent:#ffc107;--ink:#2a2a2a;--link:#8f6200;--soft:#fff6d9}
-@media(prefers-color-scheme:dark){:root{--bg:#212121;--card:#2c2c2c;--text:#f3f3f3;--muted:#b4b4b4;--line:#404040;--link:#ffc83d;--soft:#3a3320}}
+:root{
+  --bg:#f6f6f3;--card:#fff;--text:#1c1c1e;--muted:#5d6065;
+  --line:#e5e5df;--accent:#ffc107;--ink:#2a2a2a;--link:#8f6200;--soft:#fff6d9;
+}
+@media(prefers-color-scheme:dark){
+:root{--bg:#212121;--card:#2c2c2c;--text:#f3f3f3;--muted:#b4b4b4;
+--line:#404040;--link:#ffc83d;--soft:#3a3320}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--text);
+font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+-webkit-font-smoothing:antialiased}
 a{color:var(--link)}
 header{background:linear-gradient(135deg,#ffc107,#ff9800);color:var(--ink);padding:56px 20px 64px}
 .in{max-width:1040px;margin:0 auto}
@@ -23,7 +30,6 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:28px 0 10px;letter-spac
 header p{margin:0;font-size:17px;max-width:700px;opacity:.85}
 .meta{display:inline-block;margin-top:18px;padding:6px 14px;border-radius:99px;background:rgba(0,0,0,.12);font-size:14px;font-weight:600}
 .wrap{max-width:1040px;margin:-34px auto 0;padding:0 20px 60px;display:grid;grid-template-columns:230px 1fr;gap:28px;align-items:start}
-.wrap.single{grid-template-columns:1fr}
 nav{position:sticky;top:20px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px}
 nav b{display:block;font-size:12px;letter-spacing:.8px;text-transform:uppercase;color:var(--muted);margin:2px 8px 8px}
 nav a{display:block;padding:7px 10px;border-radius:10px;color:var(--text);text-decoration:none;font-size:14px}
@@ -31,18 +37,9 @@ nav a:hover{background:var(--soft)}
 main{min-width:0}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:22px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,.05)}
-a.card{display:block;color:inherit;text-decoration:none;transition:transform .16s ease,border-color .16s ease}
-a.card:hover{transform:translateY(-3px);border-color:var(--accent)}
 .card .ic{width:38px;height:38px;border-radius:11px;background:var(--accent);color:var(--ink);display:grid;place-items:center;font-size:19px;margin-bottom:10px}
 .card h3{margin:0 0 4px;font-size:16px}
 .card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
-.card .open{display:inline-block;margin-top:10px;font-size:13px;font-weight:800;color:var(--link)}
-.pricing{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-bottom:22px}
-.price-card{background:var(--card);border:2px solid var(--accent);border-radius:20px;padding:24px;text-align:center;box-shadow:0 8px 22px rgba(0,0,0,.06)}
-.price-card .label{font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:var(--muted)}
-.price{margin:6px 0 2px;font-size:38px;line-height:1.1;font-weight:850;letter-spacing:-1px}
-.period{color:var(--muted);font-size:14px}
-.badge{display:inline-block;margin-top:10px;padding:5px 10px;border-radius:99px;background:var(--soft);color:var(--link);font-size:12px;font-weight:800}
 section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 28px;margin-bottom:16px;scroll-margin-top:16px}
 h2{margin:0 0 12px;font-size:22px;letter-spacing:-.3px}
 h2 span{color:var(--link);margin-right:8px}
@@ -57,86 +54,387 @@ li{margin-bottom:7px}
 .feature span{color:var(--muted);font-size:14px}
 .contact{background:var(--soft);border-radius:14px;padding:18px;margin-top:14px}
 .button{display:inline-block;margin-top:6px;padding:10px 16px;border-radius:10px;background:var(--ink);color:#fff;text-decoration:none;font-weight:750}
-.tw{overflow-x:auto}
-table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:520px}
-th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-size:12px;letter-spacing:.6px;text-transform:uppercase;color:var(--muted)}
 footer{text-align:center;color:var(--muted);font-size:14px;padding:6px 20px 40px}
-footer a{margin:0 6px}
 @media(max-width:820px){.wrap{grid-template-columns:1fr}nav{display:none}section{padding:22px 20px}}
-@media(max-width:560px){.feature-grid,.pricing{grid-template-columns:1fr}header{padding:44px 20px 54px}}
+@media(max-width:560px){.feature-grid{grid-template-columns:1fr}header{padding:44px 20px 54px}}
 </style>
 </head>
+
 <body>
-<header><div class="in">
-<div class="brand"><div class="logo"></div>Shreeya Pix</div>
-<h1>Editing Help</h1>
-<p>Learn how to remove backgrounds, fine-tune edges, add a new background, resize, convert and merge photos, and scan documents with Shreeya Pix.</p>
-<span class="meta">Last updated: October 20, 2026</span>
-</div></header>
-<div class="wrap">
-<nav><b>Contents</b><a href="#overview">What can I do with Shreeya Pix?</a><a href="#background">How do I remove a background?</a><a href="#own-background">How do I add a new background?</a><a href="#edit">How do I fix rough edges?</a><a href="#resize">How do I resize an image?</a><a href="#convert">How do I convert photos?</a><a href="#merge">How do I merge photos?</a><a href="#scan">How do I scan a document?</a><a href="#save">How do I save or share my result?</a><a href="#problems">Common problems</a><a href="#contact">Contact Support</a></nav>
-<main>
-<div class="cards"><div class="card"><div class="ic">&#9986;</div><h3>Remove Background</h3><p>Create a clean cutout from a photo.</p></div><div class="card"><div class="ic">&#127912;</div><h3>New Background</h3><p>Add a color, gradient or photo behind your cutout.</p></div><div class="card"><div class="ic">&#128295;</div><h3>Fine-tune Edges</h3><p>Erase and restore with a brush.</p></div><div class="card"><div class="ic">&#128196;</div><h3>Scan Documents</h3><p>Scan pages and export a PDF.</p></div></div><section id="overview"><h2><span>1</span>What can I do with Shreeya Pix?</h2><p>Shreeya Pix is a photo and document tool that works <b>on your device</b>. It is free to download and supported by ads. An optional Premium subscription removes ads.</p><div class="feature-grid"><div class="feature"><b>Remove Background</b><span>Automatically separate the subject from the background.</span></div><div class="feature"><b>Erase &amp; Restore</b><span>Brush away leftover areas or bring parts of the subject back.</span></div><div class="feature"><b>Change Background</b><span>Use a color, gradient or your own photo behind the cutout.</span></div><div class="feature"><b>Adjust &amp; Crop</b><span>Adjust the result and crop it to the area you want.</span></div><div class="feature"><b>Resize Image</b><span>Exact pixels, percent or social media sizes.</span></div><div class="feature"><b>Convert Format</b><span>JPG, PNG and WebP, many files at once.</span></div><div class="feature"><b>Merge Images</b><span>Combine photos into one picture, or make a PDF.</span></div><div class="feature"><b>Document Scanner</b><span>Auto-crop, filters, text recognition and PDF export.</span></div></div></section><section id="background"><h2><span>2</span>How do I remove a background?</h2><ol>
-<li>Open Shreeya Pix and tap <b>Background removal</b>.</li>
-<li>Choose a photo from your library, or take a new one.</li>
-<li>Wait for the cutout to finish. Drag the slider on the Result screen to compare the original with the cutout.</li>
-<li>Tap <b>Edit</b> to fine-tune, <b>Background</b> to add a new background, or <b>Save &amp; Share</b> when you are done.</li>
-</ol>
-<div class="note">For best results, use a clear photo where the subject is separated from the background. Hair, transparent objects and very similar colors can be harder to cut out.</div></section><section id="own-background"><h2><span>3</span>How do I add a new background?</h2><ol>
-<li>Create a cutout first.</li>
-<li>Tap <b>Background</b>.</li>
-<li>Choose <b>None</b> (transparent), <b>White</b>, <b>Black</b>, a <b>Color</b>, a <b>Gradient</b> or a <b>Photo</b>.</li>
-<li>Use <b>Move background</b> or <b>Move person</b> to position each layer.</li>
-<li>Tap <b>Done</b>, then save the result.</li>
-</ol>
-<p>This is useful for profile pictures, product images, posters and other designs.</p></section><section id="edit"><h2><span>4</span>How do I fix rough edges?</h2><p>The <b>Edit</b> tool lets you touch up the cutout with a brush.</p>
-<ol>
-<li>On the Result screen, tap <b>Edit</b>.</li>
-<li>Choose <b>Erase</b> to remove leftover background, or <b>Restore</b> to bring back parts of the subject.</li>
-<li>Set the brush <b>Size</b>, <b>Hardness</b> and <b>Opacity</b>. Turn on <b>Show removed area</b> to see what was removed.</li>
-<li>Hold the round handle to paint, tap to move the brush, and pinch to zoom.</li>
-<li>Use undo and redo if needed, then tap <b>Done</b>.</li>
-</ol></section><section id="resize"><h2><span>5</span>How do I resize an image?</h2><ol>
-<li>Open <b>Resize image</b> and choose a photo.</li>
-<li>Pick <b>Pixels</b>, <b>Percent</b> or <b>Presets</b>.</li>
-<li>Choose the output format (JPG, PNG or WebP) and quality. You can also set a maximum file size.</li>
-<li>Save the resized image.</li>
-</ol></section><section id="convert"><h2><span>6</span>How do I convert photos?</h2><ol>
-<li>Open <b>Convert format</b> and add one or more photos.</li>
-<li>Choose JPG, PNG or WebP and set the quality.</li>
-<li>Tap the convert button and save the results.</li>
-</ol></section><section id="merge"><h2><span>7</span>How do I merge photos?</h2><ol>
-<li>Open <b>Merge Images</b> and add photos. Hold and drag to change the order.</li>
-<li>Choose a layout: <b>Stack</b>, <b>Side</b>, <b>Grid</b> or <b>Page</b>, and adjust spacing, border and background.</li>
-<li>Use <b>To PDF</b> to make a PDF from photos, or <b>PDFs</b> to combine PDF files.</li>
-<li>Save the result.</li>
-</ol></section><section id="scan"><h2><span>8</span>How do I scan a document?</h2><ol>
-<li>Open <b>Document scanner</b> and capture a page. Use <b>Add</b> to scan more pages.</li>
-<li>Pick a filter: <b>Original</b>, <b>Auto</b>, <b>Magic color</b> or <b>Grayscale</b>.</li>
-<li>Use <b>Retake</b>, <b>Rotate</b>, <b>Text</b> or <b>Delete</b> as needed.</li>
-<li>Tap <b>Export PDF</b> to save your document.</li>
-</ol></section><section id="save"><h2><span>9</span>How do I save or share my result?</h2><p>Tap <b>Save &amp; Share</b> after editing to save the image to your device or send it to another app.</p>
-<ul>
-<li>Allow photo access when asked. If saving fails, check Photos permission in your device settings and make sure you have free storage.</li>
-<li>Free users may be asked to watch a short ad before saving or sharing. <b>Premium removes ads.</b></li>
-<li>When sharing, the app you share to may apply its own rules or compression.</li>
-</ul></section><section id="problems"><h2><span>10</span>Common problems</h2><h3>The cutout does not look right</h3>
-<p>Try a clearer photo with better light and more contrast between the subject and background, then use Erase and Restore to fix the edges.</p>
-<h3>I cannot save the photo</h3>
-<p>Check that Shreeya Pix can access your Photos in device settings, and that your device has enough free storage.</p>
-<h3>Why am I seeing ads?</h3>
-<p>Shreeya Pix is free and supported by ads. Premium removes ads. See <a href="shreeya-pix-premium-purchases.html">Premium &amp; Purchases</a>.</p></section><section id="contact"><h2><span>11</span>Contact Support</h2><p>If you need help with any tool, contact us by email and tell us which tool you were using and what went wrong.</p><div class="contact">
-<p><b>Developer:</b> Bhupendra Dahal</p>
-<p><b>Email:</b> <a href="mailto:bhupendradahal30@gmail.com">bhupendradahal30@gmail.com</a></p>
-<a class="button" href="mailto:bhupendradahal30@gmail.com?subject=Shreeya%20Pix%20Editing%20Support">Email Support</a>
+
+<header>
+<div class="in">
+  <div class="brand"><div class="logo"></div>Shreeya Pix</div>
+
+  <h1>Editing Help</h1>
+
+  <p>
+    Learn how to remove backgrounds, erase unwanted objects, crop photos,
+    convert images and add your own background with
+    Shreeya Pix.
+  </p>
+
+  <span class="meta">Free app · Optional Premium removes ads · Last updated: October 20, 2026</span>
 </div>
-<div class="note">Do not send passwords or other sensitive information by email.</div></section>
+</header>
+
+<div class="wrap">
+
+<nav>
+  <b>Contents</b>
+  <a href="#overview">Editing Features</a>
+  <a href="#background">Remove Background</a>
+  <a href="#own-background">Add Your Background</a>
+  <a href="#erase">Erase Objects</a>
+  <a href="#crop">Crop Photos</a>
+  <a href="#convert">Convert Photos</a>
+  <a href="#save">Save &amp; Share</a>
+  <a href="#problems">Common Problems</a>
+  <a href="shreeya-pix-premium-purchases.html">Premium &amp; Purchases</a>
+  <a href="#contact">Contact Support</a>
+</nav>
+
+<main>
+
+<div class="cards">
+
+  <div class="card">
+    <div class="ic">&#9986;</div>
+    <h3>Remove Background</h3>
+    <p>
+      Automatically remove the background from a photo and create
+      a clean cutout.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="ic">&#128295;</div>
+    <h3>Erase Objects</h3>
+    <p>
+      Remove unwanted objects or areas from your image.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="ic">&#9986;</div>
+    <h3>Crop &amp; Resize</h3>
+    <p>
+      Crop your photo and prepare it for the size or format you need.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="ic">&#128247;</div>
+    <h3>Convert Photos</h3>
+    <p>
+      Convert images between supported formats.
+    </p>
+  </div>
+
+</div>
+
+
+<section id="overview">
+
+  <h2><span>1</span>What can I do with Shreeya Pix?</h2>
+
+  <p>
+    Shreeya Pix is a <b>free photo editing app supported by advertising</b>, with an optional <b>Premium</b> subscription that removes ads.
+    It provides a collection of tools for preparing, cleaning,
+    editing and converting images directly on your device.
+  </p>
+
+  <div class="feature-grid">
+
+    <div class="feature">
+      <b>Remove Background</b>
+      <span>Remove the original background from a photo.</span>
+    </div>
+
+    <div class="feature">
+      <b>Custom Background</b>
+      <span>Place your cutout on a background you choose.</span>
+    </div>
+
+    <div class="feature">
+      <b>Erase Objects</b>
+      <span>Remove unwanted objects or parts of a photo.</span>
+    </div>
+
+    <div class="feature">
+      <b>Crop Photo</b>
+      <span>Crop an image to the area you want to keep.</span>
+    </div>
+
+    <div class="feature">
+      <b>Photo Converter</b>
+      <span>Convert photos between supported image formats.</span>
+    </div>
+
+    <div class="feature">
+      <b>Resize Image</b>
+      <span>Change image dimensions for different uses.</span>
+    </div>
+
+    <div class="feature">
+      <b>Save &amp; Share</b>
+      <span>Save your edited result or share it with another app.</span>
+    </div>
+
+  </div>
+
+  <div class="note">
+    Shreeya Pix is free to use. Advertising helps support the development and operation of the app, and the optional <a href="shreeya-pix-premium-purchases.html">Premium</a> subscription removes ads.
+  </div>
+
+</section>
+
+
+<section id="background">
+
+  <h2><span>2</span>How do I remove a background?</h2>
+
+  <p>
+    Use the Background Removal feature to separate the main subject
+    from the original background.
+  </p>
+
+  <ol>
+    <li>Open Shreeya Pix and choose a photo.</li>
+    <li>Select <b>Remove Background</b>.</li>
+    <li>Wait for the background removal process to finish.</li>
+    <li>Review the cutout and make any available adjustments.</li>
+    <li>Continue to save the result or add a new background.</li>
+  </ol>
+
+  <div class="note">
+    For best results, use a clear photo where the main subject is
+    reasonably separated from the background.
+  </div>
+
+</section>
+
+
+<section id="own-background">
+
+  <h2><span>3</span>How do I remove the background and add my own background?</h2>
+
+  <p>
+    You can create a cutout and place it over another background image.
+  </p>
+
+  <ol>
+    <li>Choose the photo you want to edit.</li>
+    <li>Use <b>Remove Background</b> to create the subject cutout.</li>
+    <li>Choose the option to change or add a background, where available.</li>
+    <li>Select a background provided by the app or choose your own image.</li>
+    <li>Position and adjust the subject as needed.</li>
+    <li>Save the finished image.</li>
+  </ol>
+
+  <p>
+    This can be useful for profile pictures, product images,
+    creative photos, posters and other designs.
+  </p>
+
+</section>
+
+
+<section id="erase">
+
+  <h2><span>4</span>How do I erase an unwanted object?</h2>
+
+  <p>
+    The Object Eraser tool is designed to remove unwanted objects,
+    people or areas from a photo.
+  </p>
+
+  <ol>
+    <li>Open the photo in Shreeya Pix.</li>
+    <li>Select <b>Erase Object</b> or the object removal tool.</li>
+    <li>Brush over or select the unwanted area.</li>
+    <li>Apply the removal.</li>
+    <li>Review the result and repeat the process if necessary.</li>
+    <li>Save the edited photo.</li>
+  </ol>
+
+  <div class="note">
+    Very large objects, complicated backgrounds or overlapping subjects
+    may require more than one attempt for the best result.
+  </div>
+
+</section>
+
+
+<section id="crop">
+
+  <h2><span>5</span>How do I crop a photo?</h2>
+
+  <p>
+    The Crop tool lets you remove unwanted edges and keep only the
+    part of the image you need.
+  </p>
+
+  <ol>
+    <li>Open your photo.</li>
+    <li>Select <b>Crop</b>.</li>
+    <li>Adjust the crop area.</li>
+    <li>Choose an available aspect ratio if needed.</li>
+    <li>Apply the crop and save the result.</li>
+  </ol>
+
+</section>
+
+
+<section id="convert">
+
+  <h2><span>6</span>How do I convert a photo?</h2>
+
+  <p>
+    Use the Photo Converter to change an image into another supported
+    image format.
+  </p>
+
+  <ol>
+    <li>Select the photo you want to convert.</li>
+    <li>Choose <b>Convert Photo</b>.</li>
+    <li>Select the available output format.</li>
+    <li>Confirm the conversion.</li>
+    <li>Save the converted image.</li>
+  </ol>
+
+  <p>
+    The formats available depend on the current version of Shreeya Pix
+    and your device.
+  </p>
+
+</section>
+
+
+<section id="save">
+
+  <h2><span>7</span>How do I save or share my edited photo?</h2>
+
+  <p>
+    After completing an edit, use the app's save option to store
+    the result on your device. You can also use the Share option
+    to send the image to another supported app.
+  </p>
+
+  <ul>
+    <li>
+      Make sure Shreeya Pix has permission to access your Photos
+      or photo library when required.
+    </li>
+
+    <li>
+      If you cannot save a result, check the app's photo permissions
+      in your device settings.
+    </li>
+
+    <li>
+      When sharing, the selected third-party app may apply its own
+      rules or compression.
+    </li>
+  </ul>
+
+</section>
+
+
+<section id="problems">
+
+  <h2><span>8</span>Common editing problems</h2>
+
+  <h3>Background removal does not look correct</h3>
+
+  <p>
+    Try a clearer photo with better lighting and stronger separation
+    between the subject and background. Complex edges such as hair,
+    transparent objects and very similar colors can be harder to process.
+  </p>
+
+
+  <h3>Object erasing leaves an unwanted mark</h3>
+
+  <p>
+    Try selecting a smaller area or repeat the erase operation.
+    Results can depend on the size and complexity of the surrounding image.
+  </p>
+
+
+  <h3>I cannot save the edited photo</h3>
+
+  <p>
+    Check that Shreeya Pix has permission to access your Photos
+    or photo library and make sure your device has enough free storage.
+  </p>
+
+
+  <h3>The converted photo is not where I expected</h3>
+
+  <p>
+    Check your device's Photos or the location used by the app
+    for saved files. If the problem continues, contact support.
+  </p>
+
+
+  <h3>Why am I seeing advertisements?</h3>
+
+  <p>
+    Shreeya Pix is free and supported by advertising.
+    Ads help support the development and operation of the app.
+    Advertising and consent choices may vary depending on your location and device. To remove ads, subscribe to <a href="shreeya-pix-premium-purchases.html">Shreeya Pix Premium</a>.
+  </p>
+
+</section>
+
+
+<section id="contact">
+
+  <h2><span>9</span>Contact Support</h2>
+
+  <p>
+    If you need help with background removal, object erasing,
+    cropping, conversion, saving, sharing
+    or another editing feature, contact us by email.
+  </p>
+
+  <div class="contact">
+
+    <p>
+      <b>Developer:</b> Bhupendra Dahal
+    </p>
+
+    <p>
+      <b>Email:</b>
+      <a href="mailto:bhupendradahal30@gmail.com">
+        bhupendradahal30@gmail.com
+      </a>
+    </p>
+
+    <a
+      class="button"
+      href="mailto:bhupendradahal30@gmail.com?subject=Shreeya%20Pix%20Editing%20Support"
+    >
+      Email Support
+    </a>
+
+  </div>
+
+  <div class="note">
+    When contacting support, tell us which editing tool you were using
+    and what went wrong. Do not send passwords or other sensitive
+    information by email.
+  </div>
+
+</section>
+
 </main>
 </div>
+
 <footer>
-<div>&copy; 2026 Bhupendra Dahal. Shreeya Pix.</div>
-<div><a href="shreeya-pix-support.html">Support</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="shreeya-pix-premium-purchases.html">Premium</a></div>
+  &copy; 2026 Bhupendra Dahal. Shreeya Pix.
 </footer>
+
 </body>
 </html>
